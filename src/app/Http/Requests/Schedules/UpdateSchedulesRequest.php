@@ -24,10 +24,10 @@ class UpdateSchedulesRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'user_id' => 'required',
-            'service_id' => 'required',
-            'employee_id' => 'required',
-            'schedule_date' => 'required|unique:schedules|date_format:Y-m-d H:i:s',
+            'user_id' => 'sometimes|required',
+            'service_id' => 'sometimes|required',
+            'employee_id' => 'sometimes|required',
+            'schedule_date' => 'sometimes|required|unique:schedules|date_format:Y-m-d H:i:s',
         ];
     }
 }

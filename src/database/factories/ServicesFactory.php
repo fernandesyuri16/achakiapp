@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -14,6 +15,7 @@ class ServicesFactory extends Factory
         return [
             'name' => fake()->name(),
             'description' => fake()->text(255),
+            'user_id' => fake()->randomNumber(2)
         ];
     }
 }

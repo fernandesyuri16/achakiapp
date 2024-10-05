@@ -24,11 +24,11 @@ class UpdateCompaniesRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => 'required|max:50',
-            'latitude' => 'required',
-            'longitude' => 'required',
-            'phone' => 'required',
-            'social_link' => 'required',
+            'name' => 'sometimes|required|max:50',
+            'latitude' => 'sometimes|required',
+            'longitude' => 'sometimes|required',
+            'phone' => 'sometimes|required',
+            'social_link' => 'sometimes|required',
         ];
     }
 }

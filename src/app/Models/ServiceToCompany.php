@@ -19,6 +19,7 @@ class ServiceToCompany extends Model
         'service_id',
         'company_id',
         'cost',
+        'user_id'
     ];
 
     /**

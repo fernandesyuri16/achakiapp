@@ -14,9 +14,9 @@ class UpdateServiceToCompanyRequest extends FormRequest
     public function rules()
     {
         return [
-            'service_id' => 'required',
-            'company_id' => 'required',
-            'cost' => 'required',
+            'service_id' => 'sometimes|required',
+            'company_id' => 'sometimes|required',
+            'cost' => 'sometimes|required',
         ];
     }
 }

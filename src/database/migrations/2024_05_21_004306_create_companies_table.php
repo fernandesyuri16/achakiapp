@@ -18,6 +18,7 @@ return new class extends Migration
             $table->float('latitude');
             $table->string('phone');
             $table->string('social_link');
+            $table->integer('user_id');
             $table->timestamps();
         });
     }

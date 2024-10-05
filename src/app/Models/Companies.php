@@ -20,7 +20,8 @@ class Companies extends Model
         'latitude',
         'longitude',
         'phone',
-        'social_link'
+        'social_link',
+        'user_id'
     ];
 
     /**

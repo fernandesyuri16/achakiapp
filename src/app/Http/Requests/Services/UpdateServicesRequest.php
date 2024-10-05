@@ -14,8 +14,8 @@ class UpdateServicesRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|max:50',
-            'description' => 'required',
+            'name' => 'sometimes|required|max:50',
+            'description' => 'sometimes|required',
         ];
     }
 }

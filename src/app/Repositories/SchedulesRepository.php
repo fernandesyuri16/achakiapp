@@ -20,7 +20,7 @@ class SchedulesRepository implements SchedulesRepositoryInterface
 
     public function getSchedules(): Paginator
     {
-        return Schedules::simplePaginate(10);
+        return Schedules::simplePaginate(20);
     }
 
     public function updateSchedule(int $scheduleId, array $scheduleDetails): void

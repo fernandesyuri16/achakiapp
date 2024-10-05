@@ -30,8 +30,8 @@ Route::middleware("auth:sanctum")->group(function () {
     Route::apiResource('company', CompaniesController::class);
     Route::apiResource('services', ServicesController::class);
     Route::apiResource('employees', EmployeesController::class);
-    Route::apiResource('employees/employee_to_service', EmployeeToServiceController::class);
-    Route::apiResource('services/service_to_company', ServiceToCompanyController::class);
+    Route::apiResource('employee/employee_to_service', EmployeeToServiceController::class);
+    Route::apiResource('service/service_to_company', ServiceToCompanyController::class);
 
     Route::post('/logout', [AuthController::class, 'logout'])->name('auth.logout');
 });

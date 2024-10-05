@@ -20,7 +20,7 @@ class ServicesRepository implements ServicesRepositoryInterface
 
     public function getServices(): Paginator
     {
-        return Services::simplePaginate(10);
+        return Services::simplePaginate(20);
     }
 
     public function updateService(int $serviceId, array $serviceDetails): void

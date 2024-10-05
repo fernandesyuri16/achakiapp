@@ -20,7 +20,7 @@ class CompaniesRepository implements CompaniesRepositoryInterface
 
     public function getCompanies(): Paginator
     {
-        return Companies::simplePaginate(10);
+        return Companies::simplePaginate(20);
     }
 
     public function updateCompany(int $companyId, array $companyDetails): void

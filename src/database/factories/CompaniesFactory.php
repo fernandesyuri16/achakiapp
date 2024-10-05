@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -22,6 +23,7 @@ class CompaniesFactory extends Factory
             'longitude' => fake()->longitude(),
             'phone' => fake()->phoneNumber(),
             'social_link' => fake()->url(),
+            'user_id' => User::factory()
         ];
     }
 }

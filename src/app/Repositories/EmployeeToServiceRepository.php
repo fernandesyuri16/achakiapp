@@ -20,7 +20,7 @@ class EmployeeToServiceRepository implements EmployeesToServiceRepositoryInterfa
 
     public function getEmployees(): Paginator
     {
-        return EmployeeToService::simplePaginate(10);
+        return EmployeeToService::simplePaginate(20);
     }
 
     public function updateEmployee(int $employeeId, array $employeeDetails): void
